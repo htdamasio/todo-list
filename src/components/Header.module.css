@@ -1,0 +1,18 @@
+.header {
+  background: var(--gray-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4.5rem;
+  gap: .5rem;
+}
+
+.header p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--blue-400);
+}
+
+.header p span {
+  color: var(--purple-700);
+}

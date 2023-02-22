@@ -1,0 +1,31 @@
+.tasksHeader{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-top: 4rem;
+}
+
+.tasksHeader div {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.badge {
+  background: var(--gray-400);
+  color: var(--gray-200);
+  padding: .125rem .5rem;
+  border-radius: 9999px;
+  font-size: .75rem;
+}
+
+.tasksCreated {
+  color: var(--blue-400);
+}
+
+.tasksCompleted {
+  color: var(--purple-400);
+}

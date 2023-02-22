@@ -1,0 +1,51 @@
+.taskContent {
+  width: 100%;
+  margin-top: 1.5rem;
+  height: 35rem;
+  max-height: 50vh; 
+  overflow-y: auto;
+}
+
+.taskContent::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: var(--gray-300); /* or add it to the track */
+  border-radius: 9999px;
+}
+
+.taskContent::-webkit-scrollbar-track {
+  border-radius: 9999px;
+}
+
+.taskContent::-webkit-scrollbar-thumb {
+  background-color: var(--blue-400);
+  border-radius: 9999px;
+}
+
+.noTasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1.5rem;
+  gap: 1rem;
+  color: var(--gray-300);
+
+  border-top: 1px solid var(--gray-400);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.noTasksContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 768) {
+  .taskContent {
+    height: 40rem;
+    max-height: 80vh; 
+  }
+}

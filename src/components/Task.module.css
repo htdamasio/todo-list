@@ -1,0 +1,45 @@
+.completedTask, .uncompletedTask {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+  background: var(--gray-500);
+  border-radius: 8px;
+}
+.completedTask, .uncompletedTask + .completedTask, .uncompletedTask {
+  margin-top: .75rem;
+}
+
+.completedTask .checkbox svg {
+  color: var(--purple-400);
+  cursor: pointer;
+}
+
+.uncompletedTask .checkbox svg {
+  color: var(--blue-400);
+  cursor: pointer;
+}
+
+.completedTask p, .uncompletedTask p {
+  flex: 1;
+  color: var(--gray-100);
+  font-size: .875rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.completedTask p {
+  color: var(--gray-300);
+  text-decoration: line-through;  
+}
+
+.completedTask > svg, .uncompletedTask > svg {
+  color: var(--gray-300);
+  cursor: pointer;
+  transition: color .1s;
+}
+
+.completedTask > svg:hover, .uncompletedTask > svg:hover {
+  color: var(--red);
+}

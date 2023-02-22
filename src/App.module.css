@@ -1,0 +1,23 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  /* gap: 4rem; */
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 auto;
+  align-items: center;
+}
+
+.tasksContainer {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+  
+  .todolist {
+    padding: 0 1rem;
+  }
+}
